@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batman — Capa Clássica — Toca Geek</title>
+<meta name="description" content="Bruce Wayne veste o capuz à noite pra proteger Gotham City, sem superpoderes — só disciplina, tecnologia e trauma bem administrado. Essa arte resgata o visual clássico de HQ do Cavaleiro das Trevas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand">
+      <img class="js-logo" alt="Toca Geek">
+      <span>TOCA <em>GEEK</em></span>
+    </a>
+    <a href="../index.html#herois" class="back-link">&larr; Voltar ao catálogo</a>
+  </div>
+</header>
+
+<main>
+  <section class="product-page wrap">
+    <p class="breadcrumb">
+      <a href="../index.html">Início</a>
+      <span>/</span>
+      <a href="../index.html#herois">Heróis Marvel & DC</a>
+      <span>/</span>
+      <span class="breadcrumb-current">Batman — Capa Clássica</span>
+    </p>
+
+    <div class="product-grid">
+      <div class="product-image-wrap">
+        <span class="card-chip">Heróis Marvel & DC</span>
+        <img src="" alt="Batman — Capa Clássica" class="js-product-img">
+      </div>
+
+      <div class="product-info">
+        <h1>Batman — Capa Clássica</h1>
+        
+        <p class="product-description">Bruce Wayne veste o capuz à noite pra proteger Gotham City, sem superpoderes — só disciplina, tecnologia e trauma bem administrado. Essa arte resgata o visual clássico de HQ do Cavaleiro das Trevas.</p>
+        <div class="product-ctas">
+          <a href="#" class="btn-primary js-buy-link">Comprar agora</a>
+          <a href="../index.html#herois" class="btn-ghost">Ver mais da seção</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="related-block">
+      <div class="section-head">
+        <div class="section-head-left">
+          <span class="section-tag">// Você também pode gostar</span>
+          <h2>Mais de Heróis Marvel & DC</h2>
+        </div>
+      </div>
+      <div class="grid grid-related" id="related-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img class="js-logo" alt="Toca Geek">
+      <span>TOCA GEEK</span>
+    </div>
+    <p class="footer-note">Base do site gerada pra evoluir no Fable 5. Preços e links de compra: edite build.py e rode de novo.</p>
+  </div>
+</footer>
+
+<button id="social-fab" aria-label="Redes sociais da Toca Geek" title="Siga a Toca Geek">
+  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke="white" stroke-width="1.6"/>
+    <circle cx="12" cy="12" r="4.6" stroke="white" stroke-width="1.6"/>
+    <circle cx="17.6" cy="6.4" r="1.1" fill="white"/>
+  </svg>
+</button>
+
+<div id="social-modal-backdrop">
+  <div id="social-modal" role="dialog" aria-modal="true" aria-labelledby="social-modal-title">
+    <button id="social-modal-close" aria-label="Fechar">&times;</button>
+    <div class="social-modal-icon">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke="white" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="4.6" stroke="white" stroke-width="1.6"/>
+        <circle cx="17.6" cy="6.4" r="1.1" fill="white"/>
+      </svg>
+    </div>
+    <h3 id="social-modal-title">Siga a Toca Geek</h3>
+    <p>Lançamentos, promoções e a raposa aprontando nos stories — tudo primeiro por lá.</p>
+    <span class="social-handle">@toca_geekt</span>
+    <a id="social-modal-link" href="https://www.instagram.com/toca_geekt/" target="_blank" rel="noopener noreferrer" class="btn-primary">Abrir Instagram</a>
+  </div>
+</div>
+
+<script src="../images-data.js"></script>
+<script src="../data.js"></script>
+<script>window.CURRENT_PRODUCT_SLUG = "batman-classico";</script>
+<script src="../product.js"></script>
+<script src="../social.js"></script>
+
+</body>
+</html>
