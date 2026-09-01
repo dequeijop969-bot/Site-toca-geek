@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toca Geek — Camisetas Geek</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <img class="js-logo" alt="Toca Geek">
+    </a>
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M20 20L16.5 16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <input id="search-input" type="text" placeholder="Buscar camiseta..." autocomplete="off">
+    </div>
+    <nav class="cat-pills" id="cat-pills"></nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-logo"><img class="js-logo" alt="Toca Geek"></div>
+      <p class="hero-eyebrow">Loja de camisetas geek</p>
+      <h1>Cada fandom tem uma <span class="accent">toca</span>.</h1>
+      <p>Estampas de anime, heróis, séries e games pra quem não pede desculpa pelo próprio gosto. Escolhe a sua e entra na toca.</p>
+      <div class="hero-ctas">
+        <a href="#anime" class="btn-primary">Explorar catálogo</a>
+        <a href="#kawaii" class="btn-ghost">Ver lançamentos</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong id="stat-total">27</strong><span>Estampas</span></div>
+        <div><strong id="stat-cats">7</strong><span>Seções</span></div>
+        <div><strong>100%</strong><span>Geek</span></div>
+      </div>
+    </div>
+  </section>
+
+  <p id="search-empty" class="wrap">Nenhuma estampa encontrada. Tenta buscar por outro nome ou franquia.</p>
+
+  <section class="catalog wrap" id="catalog"></section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img class="js-logo" alt="Toca Geek">
+    </div>
+    <p class="footer-note">© 2026 Toca Geek — feito por quem também tem uma estante lotada de referência geek.</p>
+  </div>
+</footer>
+
+<button id="social-fab" aria-label="Redes sociais da Toca Geek" title="Siga a Toca Geek">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke-width="1.6"/>
+    <circle cx="12" cy="12" r="4.6" stroke-width="1.6"/>
+    <circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/>
+  </svg>
+</button>
+
+<div id="social-modal-backdrop">
+  <div id="social-modal" role="dialog" aria-modal="true" aria-labelledby="social-modal-title">
+    <button id="social-modal-close" aria-label="Fechar">&times;</button>
+    <div class="social-modal-icon">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2.5" y="2.5" width="19" height="19" rx="6" stroke="white" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="4.6" stroke="white" stroke-width="1.6"/>
+        <circle cx="17.6" cy="6.4" r="1.1" fill="white"/>
+      </svg>
+    </div>
+    <h3 id="social-modal-title">Siga a Toca Geek</h3>
+    <p>Lançamentos, bastidores e promoções — tudo primeiro por lá.</p>
+    <span class="social-handle">@toca_geekt</span>
+    <a id="social-modal-link" href="https://www.instagram.com/toca_geekt/" target="_blank" rel="noopener noreferrer" class="btn-primary">Abrir Instagram</a>
+  </div>
+</div>
+
+<script src="images-data.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+<script src="intro.js"></script>
+<script src="social.js"></script>
+
+</body>
+</html>
